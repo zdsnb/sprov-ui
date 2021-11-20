@@ -126,7 +126,6 @@ install_java() {
 
 install_v2ray() {
     echo -e "${green}开始安装or升级v2ray${plain}"
-    bash <(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh) -f
     if [[ $? -ne 0 ]]; then
         echo 1
         exit 1
